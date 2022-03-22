@@ -11,6 +11,7 @@ class StuffItemAdmin extends React.Component {
         <Table.Cell>{this.props.stuff.quantity}</Table.Cell>
         <Table.Cell>{this.props.stuff.condition}</Table.Cell>
         <Table.Cell>{this.props.stuff.owner}</Table.Cell>
+        <Table.Cell>{this.props.stuff.value}</Table.Cell>
       </Table.Row>
     );
   }
@@ -24,6 +25,7 @@ StuffItemAdmin.propTypes = {
     condition: PropTypes.string,
     _id: PropTypes.string,
     owner: PropTypes.string,
+    value: PropTypes.value,
   }).isRequired,
 };
 
